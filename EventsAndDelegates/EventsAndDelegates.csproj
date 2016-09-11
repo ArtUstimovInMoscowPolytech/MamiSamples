@@ -4,13 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{888507C8-6716-47FD-B639-B58BCD041CF5}</ProjectGuid>
+    <ProjectGuid>{B9953EA3-6CE8-4CB4-960F-35DE826B2353}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelloWorldWebServer</RootNamespace>
-    <AssemblyName>HelloWorldWebServer</AssemblyName>
+    <RootNamespace>EventsAndDelegates</RootNamespace>
+    <AssemblyName>EventsAndDelegates</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

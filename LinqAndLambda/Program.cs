@@ -81,6 +81,9 @@ namespace LinqAndLambda
                                 .OrderByDescending(person => person.Age);
 
             PrintPersons(ivanov);
+
+            // Ожидаем пользовательского ввода, чтобы консоль не закрылась.
+            Console.Read();
         }
 
         /// <summary>

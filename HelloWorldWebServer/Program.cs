@@ -38,6 +38,8 @@ namespace HelloWorldWebServer
             // Начиинаем ждать подключений.
             socket.Listen(1);
 
+            Console.WriteLine("Server started at 127.0.0.1:8080");
+
             // Обрабатываем подключения в бесконечном цикле.
             while (true)
             {

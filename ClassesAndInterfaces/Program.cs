@@ -115,6 +115,9 @@ namespace ClassesAndInterfaces
 
             // Печатаем текст на консоль.
             consolePrinter.Print(consoleText);
+
+            // Ожидаем пользовательского ввода, чтобы консоль не закрылась.
+            Console.Read();
         }
     }
 }
