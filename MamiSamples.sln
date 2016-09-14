@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqAndLambda", "LinqAndLam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldWebServer", "HelloWorldWebServer\HelloWorldWebServer.csproj", "{888507C8-6716-47FD-B639-B58BCD041CF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{8A834CD3-EF4C-408A-BE27-50A89C28FA95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{888507C8-6716-47FD-B639-B58BCD041CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{888507C8-6716-47FD-B639-B58BCD041CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{888507C8-6716-47FD-B639-B58BCD041CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A834CD3-EF4C-408A-BE27-50A89C28FA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A834CD3-EF4C-408A-BE27-50A89C28FA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A834CD3-EF4C-408A-BE27-50A89C28FA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A834CD3-EF4C-408A-BE27-50A89C28FA95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
