@@ -13,3 +13,5 @@
 * [Generics](https://github.com/Ustimov/MamiSamples/tree/master/Generics) - использование дженериков в C# на примере автоматически увеличивающегося массива.
 
 * [XamarinFormsLayout](https://github.com/Ustimov/MamiSamples/tree/master/XamarinFormsLayout) - основные тонкости вёрстки на XAML и навигации в Xamarin.Forms.
+
+* [Json](https://github.com/Ustimov/MamiSamples/tree/master/Json) - основы работы с JSON из C#.
