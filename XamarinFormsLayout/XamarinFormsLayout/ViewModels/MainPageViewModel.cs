@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using Xamarin.Forms;
+using XamarinFormsLayout.Views;
 
 namespace XamarinFormsLayout.ViewModels
 {
@@ -15,6 +16,8 @@ namespace XamarinFormsLayout.ViewModels
         public ICommand OpenListViewPageCommand { get; private set; }
 
         public ICommand PopupCommand { get; private set; }
+
+        public ICommand PositioningCommand { get; private set; }
 
         public MainPageViewModel(Page page)
         {
@@ -29,6 +32,8 @@ namespace XamarinFormsLayout.ViewModels
 
             PopupCommand = new Command(async () => 
                 await _page.DisplayAlert("Привет", String.Empty, "Закрыть"));
+
+            PositioningCommand = new Command(async () => await _page.Navigation.PushAsync(new PositioningPage()));
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

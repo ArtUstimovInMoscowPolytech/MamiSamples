@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsLayout.Views.PositioningPage"
+             Title="Позиционирование">
+  
+  <StackLayout VerticalOptions="FillAndExpand">
+    
+    <StackLayout Orientation="Horizontal">
+      
+      <BoxView BackgroundColor="Aqua"/>
+    
+      <BoxView BackgroundColor="Blue"/>
+    
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal">
+    
+      <BoxView BackgroundColor="Fuchsia"/>
+    
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal">
+      
+      <BoxView BackgroundColor="Green"/>
+    
+      <BoxView BackgroundColor="Lime"
+               HorizontalOptions="FillAndExpand"/>
+    
+    </StackLayout>
+    
+    <StackLayout Orientation="Horizontal"
+                 HorizontalOptions="FillAndExpand">
+    
+      <BoxView BackgroundColor="Maroon"
+               HorizontalOptions="EndAndExpand"/>
+    
+    </StackLayout>
+    
+    <StackLayout VerticalOptions="FillAndExpand">
+      
+      <BoxView BackgroundColor="Navy"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"/>
+    
+      <BoxView BackgroundColor="Olive"
+               VerticalOptions="EndAndExpand"
+               HorizontalOptions="FillAndExpand"/>
+  
+    </StackLayout>
+  
+  </StackLayout>
+  
+</ContentPage>

@@ -11,7 +11,7 @@
 
   <StackLayout VerticalOptions="FillAndExpand">
     
-    <Label Text="{Binding ClickCount, StringFormat='Количество кликов: {0}'}"
+    <Label Text="{Binding ClickCount, StringFormat='Количество переходов к списку: {0}'}"
          VerticalOptions="CenterAndExpand"
          HorizontalOptions="Center" />
 
@@ -19,6 +19,9 @@
             Command="{Binding OpenListViewPageCommand}"
             VerticalOptions="EndAndExpand"
             HorizontalOptions="FillAndExpand" />
+    
+    <Button Text="Позиционирование"
+            Command="{Binding PositioningCommand}"/>
     
   </StackLayout>
 
