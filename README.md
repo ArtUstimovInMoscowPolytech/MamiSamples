@@ -15,3 +15,5 @@
 * [XamarinFormsLayout](https://github.com/Ustimov/MamiSamples/tree/master/XamarinFormsLayout) - основные тонкости вёрстки на XAML и навигации в Xamarin.Forms.
 
 * [Json](https://github.com/Ustimov/MamiSamples/tree/master/Json) - основы работы с JSON из C#.
+
+* [Json](https://github.com/Ustimov/MamiSamples/tree/master/Xml) - основы работы с XML из C#.
