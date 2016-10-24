@@ -16,4 +16,4 @@
 
 * [Json](https://github.com/Ustimov/MamiSamples/tree/master/Json) - основы работы с JSON из C#.
 
-* [Json](https://github.com/Ustimov/MamiSamples/tree/master/Xml) - основы работы с XML из C#.
+* [Xml](https://github.com/Ustimov/MamiSamples/tree/master/Xml) - основы работы с XML из C#.

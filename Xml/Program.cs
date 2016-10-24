@@ -100,7 +100,7 @@ namespace Xml
             // Сериализуем и десериализуем список
             var parsedPersons = DeserializeObject<List<Person>>(SerializeObject(persons));
 
-            // Сверяе количество элементов в списках
+            // Сверяем количество элементов в списках
             if (persons.Count == parsedPersons.Count)
             {
                 Console.WriteLine("Count is equal!");
