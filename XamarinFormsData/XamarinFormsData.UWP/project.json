@@ -1,6 +1,5 @@
 ﻿{
   "dependencies": {
-    "akavache": "5.0.0",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "sqlite-net-pcl": "1.2.0",
     "Xamarin.Forms": "2.3.2.127"

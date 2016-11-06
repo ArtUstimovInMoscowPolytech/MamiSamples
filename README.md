@@ -16,4 +16,6 @@
 
 * [Json](https://github.com/Ustimov/MamiSamples/tree/master/Json) - основы работы с JSON из C#.
 
+* [XamarinFormsData](https://github.com/Ustimov/MamiSamples/tree/master/XamarinFormsData) - пример работы с базой данных SQLite в Xamarin.Forms.
+
 * [Xml](https://github.com/Ustimov/MamiSamples/tree/master/Xml) - основы работы с XML из C#.

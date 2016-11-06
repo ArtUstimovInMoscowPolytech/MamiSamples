@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
-using Akavache;
 using SQLite;
 using Xamarin.Forms;
 using XamarinFormsData.Database;
@@ -37,9 +36,6 @@ namespace XamarinFormsData.ViewModels
                 connection.CreateTable<RecordModel>();
             }
 
-            BlobCache.ApplicationName = "DataAkavache";
-            BlobCache.LocalMachine.InsertObject("ListItems", ListItems);
-
             RecordCommand = new Command(async () =>
             {
                 if (string.IsNullOrEmpty(TextForRecord))
@@ -64,9 +60,6 @@ namespace XamarinFormsData.ViewModels
                     case Models.DataSource.SQLite:
                         RecordToDatabase(record);
                         break;
-                    case Models.DataSource.Akavache:
-                        RecordToAkavache(record);
-                        break;
                 }
             });
 
@@ -80,9 +73,6 @@ namespace XamarinFormsData.ViewModels
                         break;
                     case Models.DataSource.SQLite:
                         ClearDatabase();
-                        break;
-                    case Models.DataSource.Akavache:
-                        ClearAkavache();
                         break;
                 }
             });
@@ -98,38 +88,8 @@ namespace XamarinFormsData.ViewModels
                     case Models.DataSource.SQLite:
                         LoadFromDatabase();
                         break;
-                    case Models.DataSource.Akavache:
-                        LoadFromAkavache();
-                        break;
                 }
             });
-        }
-
-        private void LoadFromAkavache()
-        {
-            var records = GetListItemsFromAkavache();
-
-            foreach (var record in records)
-            {
-                ListItems.Add(record);
-            }
-
-            BlobCache.LocalMachine.InsertObject("ListItems", records);
-        }
-
-        private ObservableCollection<RecordModel> GetListItemsFromAkavache()
-        {
-            BlobCache.LocalMachine.Flush();
-
-            ObservableCollection<RecordModel> records = new ObservableCollection<RecordModel>();
-
-            BlobCache.LocalMachine
-                .GetObject<ObservableCollection<RecordModel>>("ListItems")
-                .Subscribe(li => records = li);
-
-            BlobCache.LocalMachine.InvalidateObject<ObservableCollection<RecordModel>>("ListItems");
-
-            return records;
         }
 
         private void LoadFromDatabase()
@@ -152,13 +112,6 @@ namespace XamarinFormsData.ViewModels
             }
         }
 
-        private void ClearAkavache()
-        {
-            var records = GetListItemsFromAkavache();
-            records.Clear();
-            BlobCache.LocalMachine.InsertObject("ListItems", records);
-        }
-
         private void ClearDatabase()
         {
             using (var connection = GetConnection())
@@ -170,13 +123,6 @@ namespace XamarinFormsData.ViewModels
         private void ClearMemory()
         {
             _memory.Clear();
-        }
-
-        private void RecordToAkavache(RecordModel record)
-        {
-            var records = GetListItemsFromAkavache();
-            records.Add(record);
-            BlobCache.LocalMachine.InsertObject("ListItems", records);
         }
 
         private void RecordToMemory(RecordModel record)

@@ -4,6 +4,5 @@
     {
         Memory,
         SQLite,
-        Akavache
     }
 }

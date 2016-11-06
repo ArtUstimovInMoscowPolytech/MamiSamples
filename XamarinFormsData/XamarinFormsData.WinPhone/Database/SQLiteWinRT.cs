@@ -3,13 +3,13 @@ using Windows.Storage;
 using SQLite;
 using Xamarin.Forms;
 using XamarinFormsData.Database;
-using XamarinFormsData.UWP.Database;
+using XamarinFormsData.WinPhone.Database;
 
-[assembly: Dependency(typeof(SQLiteUWP))]
+[assembly: Dependency(typeof(SQLiteWinRT))]
 
-namespace XamarinFormsData.UWP.Database
+namespace XamarinFormsData.WinPhone.Database
 {
-    public class SQLiteUWP : ISQLite
+    public class SQLiteWinRT : ISQLite
     {
         public SQLiteConnection GetConnection()
         {
