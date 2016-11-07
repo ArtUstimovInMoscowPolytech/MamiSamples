@@ -9,7 +9,7 @@ using XamarinFormsData.Models;
 
 namespace XamarinFormsData.ViewModels
 {
-    public class MainViewModel
+    public class DatabasePageViewModel
     {
         private readonly List<RecordModel> _memory = new List<RecordModel>();
 
@@ -19,7 +19,7 @@ namespace XamarinFormsData.ViewModels
 
         public string[] DataSources { get; set; } = Enum.GetNames(typeof(DataSource));
 
-        public string DataSource { get; set; }
+        //public string DataSource { get; set; }
 
         public ICommand RecordCommand { get; private set; }
 
@@ -29,7 +29,7 @@ namespace XamarinFormsData.ViewModels
 
         public int SelectedIndex { get; set; }
 
-        public MainViewModel(Page page)
+        public DatabasePageViewModel(Page page)
         {
             using (var connection = GetConnection())
             {

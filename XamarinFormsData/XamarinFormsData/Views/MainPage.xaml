@@ -1,34 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamarinFormsData.Views.MainPage">
-
+             x:Class="XamarinFormsData.Views.MainPage"
+             Title="Меню">
+  
   <StackLayout>
-    <ListView x:Name="ItemListView"
-              VerticalOptions="FillAndExpand">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <ViewCell>
-            <ViewCell.View>
-              <StackLayout>
-                <Label Text="{Binding Text}"/>
-                <Label Text="{Binding DateTime}"/>
-              </StackLayout>
-            </ViewCell.View>
-          </ViewCell>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
-    <Label Text="Выберите источник данных"/>
-    <Picker x:Name="Picker"
-            SelectedIndex="{Binding SelectedIndex}"
-            SelectedIndexChanged="Picker_OnSelectedIndexChanged"/>
-    <Entry Text="{Binding TextForRecord}"
-           Placeholder="Введите текст для записи"/>
-    <Button Text="Записать"
-            Command="{Binding RecordCommand}"/>
-    <Button Text="Очистить"
-            Command="{Binding ClearCommand}"/>
+    <Button Text="Работа с изображениями"
+            Command="{Binding OpenImagePageCommand}"/>
+    <Button Text="Работа с базой данных"
+            Command="{Binding OpenDatabasePageCommand}"/>
   </StackLayout>
-
+  
 </ContentPage>

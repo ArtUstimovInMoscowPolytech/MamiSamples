@@ -3,12 +3,12 @@ using XamarinFormsData.ViewModels;
 
 namespace XamarinFormsData.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class ImagePage : ContentPage
     {
-        public MainPage()
+        public ImagePage()
         {
             InitializeComponent();
-            BindingContext = new MainPageViewModel(this.Navigation);
+            BindingContext = new ImagePageViewModel(this);
         }
     }
 }

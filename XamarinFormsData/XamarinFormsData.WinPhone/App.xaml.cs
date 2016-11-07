@@ -129,5 +129,13 @@ namespace XamarinFormsData.WinPhone
             // TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+
+            Plugin.Media.MediaImplementation.OnFilesPicked(args);
+
+            base.OnActivated(args);
+        }
     }
 }

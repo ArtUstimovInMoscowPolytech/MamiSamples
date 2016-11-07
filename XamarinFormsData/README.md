@@ -1,3 +1,3 @@
 ﻿# XamarinFormsData
 
-Пример работы с базой данных SQLite в Xamarin.Forms.
+Пример работы с изображениями и базой данных SQLite в Xamarin.Forms.

@@ -13,7 +13,7 @@ namespace XamarinFormsData.iOS.Database
     {
         public SQLiteConnection GetConnection()
         {
-            var sqliteFilename = "TodoSQLite.db3";
+            var sqliteFilename = "DataSQLite.db3";
             string documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             string libraryPath = Path.Combine(documentsPath, "..", "Library");
             var path = Path.Combine(libraryPath, sqliteFilename);
